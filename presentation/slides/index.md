@@ -14,8 +14,12 @@ FILE: 01-intro.md
 
 ---
 
-FILE: code-demos.md
+FILE: null-is-a-pain.md
 
 ---
 
-FILE: null-is-a-pain.md
+FILE: errors-are-a-pain.md
+
+---
+
+FILE: code-demos.md
