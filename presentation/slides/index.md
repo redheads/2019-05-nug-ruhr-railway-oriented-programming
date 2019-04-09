@@ -22,4 +22,8 @@ FILE: errors-are-a-pain.md
 
 ---
 
+FILE: log-pro.md
+
+---
+
 FILE: code-demos.md

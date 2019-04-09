@@ -15,12 +15,6 @@ var result = Add(i1, i2);
 
 ----
 
-### User errors
-
-TODO
-
-----
-
 ### Infrastructure errors
 
 ```csharp
@@ -29,3 +23,13 @@ Customer GetById(Guid id)
     return db.GetById(id);
 }
 ```
+
+----
+
+using Exception-Handling as control flow is bad practice
+
+(unless you are performance optimizing)
+
+----
+
+Anticipate Exceptions!
