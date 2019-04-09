@@ -11,3 +11,7 @@ revealOptions:
 ---
 
 FILE: 01-intro.md
+
+---
+
+FILE: code-demos.md
