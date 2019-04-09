@@ -1,7 +1,7 @@
 {
   "name": "2019-05-nug-ruhr-rop",
   "version": "1.0.0",
-  "description": "Slides for NUG Ruhr 2019: Railwau Oriented Programming",
+  "description": "Slides for NUG Ruhr 2019: Railway Oriented Programming",
   "main": "reveal.html",
   "scripts": {
     "start": "reveal-md slides/index.md -w --template reveal.html --highlight-theme foundation",
