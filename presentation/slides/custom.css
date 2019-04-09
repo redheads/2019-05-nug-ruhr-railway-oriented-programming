@@ -96,3 +96,11 @@
   font-size: 0.55em;
   color: gray;
 }
+
+.reveal blockquote {
+  text-align: left;
+}
+
+.reveal blockquote p {
+  margin-left: 5%;
+}
