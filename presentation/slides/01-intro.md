@@ -4,8 +4,18 @@
 
 <p style="position: absolute; top: 520px; right: -145px; color: #ccc; text-transform: none; text-align: right" class="my-shadow">Patrick Drechsler<br/>@drechsler<br/>Redheads Ltd.</p>
 
-<div style="position: relative; top: 630px; left: -16%;">
+<div style="position: absolute; top: 630px; left: -16%;">
   <p class="img-src">https://pixabay.com/users/Larisa-K-1107275/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=163518</p>
+</div>
+
+---
+
+<!-- .slide: data-background="images/gleise-1555348_1920.jpg" data-state="dimmed" -->
+
+## Have Fun
+
+<div style="position: absolute; top: 630px; left: -16%;">
+  <p class="img-src">https://pixabay.com/users/Fotoworkshop4You-2995268/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1555348</p>
 </div>
 
 ---

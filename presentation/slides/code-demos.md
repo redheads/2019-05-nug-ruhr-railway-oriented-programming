@@ -23,6 +23,10 @@ public async Task<int> AddAsync(int a, int b)
 
 Code with additional syntax highlighting (i.e. focus on some parts of the code) requires pure HTML code
 
+- no markdown
+- escape everything
+
+
 ----
 
 Example 1: custom styling on certain elements
