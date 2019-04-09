@@ -88,3 +88,11 @@
   -1px 1px 0 #000,
   1px 1px 0 #000;
 }
+
+.reveal p.img-src-plain,
+.reveal p.img-src-plain a  {
+  text-align: left;
+  line-height: 1em;
+  font-size: 0.55em;
+  color: gray;
+}
