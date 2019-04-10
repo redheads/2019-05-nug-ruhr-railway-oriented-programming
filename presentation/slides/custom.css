@@ -69,6 +69,7 @@
 
 .reveal pre code .highlightcode {
   font-weight: bold;
+  background-color: yellow;
 }
 
 .dimmed .slide-background {
