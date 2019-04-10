@@ -4,32 +4,33 @@
 
 ### Arithmetic errors
 
-```csharp
-int Add(int a, int b) => a + b;
+<pre><code data-noescape data-trim class="lang-csharp hljs">
+<span class="highlightcode">int</span> Add(int a, int b) => a + b;
 
 var i1 = Int32.Max;
 var i2 = 1;
 
 var result = Add(i1, i2);
-```
+</code></pre>
 
 ----
 
 ### Infrastructure errors
 
-```csharp
-Customer GetById(Guid id)
+<pre><code data-noescape data-trim class="lang-csharp hljs">
+<span class="highlightcode">Customer</span> GetById(Guid id)
 {
     return db.GetById(id);
 }
-```
+</code></pre>
 
 ----
 
-using Exception-Handling as control flow is bad practice
+#### IMHO
 
-(unless you are performance optimizing)
+- using Exception-Handling as control flow is bad practice
+    - (unless you are performance optimizing)
 
 ----
 
-Anticipate Exceptions!
+**Anticipate Exceptions!**

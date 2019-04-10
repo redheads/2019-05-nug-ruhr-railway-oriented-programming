@@ -2,32 +2,32 @@
 
 ----
 
-```csharp
-public void Foo(string s)
+<pre><code data-noescape data-trim class="lang-csharp hljs">
+public void Foo(<span class="highlightcode">string s</span>)
 {
     if (string.IsNullOrWhiteSpace(s))
     {
         //...
     }
 }
-```
+</code></pre>
 
 ----
 
-```csharp
-public void Foo(List<string> someStringCollection)
+<pre><code data-noescape data-trim class="lang-csharp hljs">
+public void Foo(<span class="highlightcode">List&lt;string&gt; someStringCollection</span>)
 {
     if (someStringCollection != null && someStringCollection.Any())
     {
         //...
     }
 }
-```
+</code></pre>
 
 ----
 
-```csharp
-public void Foo(Customer customer)
+<pre><code data-noescape data-trim class="lang-csharp hljs">
+public void Foo(<span class="highlightcode">Customer customer</span>)
 {
     if (customer?.Address?.ZipCode != null)
     {
@@ -38,7 +38,7 @@ public void Foo(Customer customer)
         // ..
     }
 }
-```
+</code></pre>
 
 ----
 
