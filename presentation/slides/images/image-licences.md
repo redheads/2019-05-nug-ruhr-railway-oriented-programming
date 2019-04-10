@@ -4,3 +4,4 @@
 
 - [null-vs-empty-3370lkxk56ny.jpg](https://www.reddit.com/r/geek/comments/6128y3/amusing_example_between_0_and_null_0_on_the_left/) 2019-04-09
 - [train-1728537_1920.jpg](Image by <a href="https://pixabay.com/users/12019-12019/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1728537">David Mark</a> from <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1728537">Pixabay</a>)
+- [elk.png](https://www.elastic.co/de/elk-stack) 2019-04-10
