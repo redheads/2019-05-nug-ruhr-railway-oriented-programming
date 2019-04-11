@@ -5,7 +5,7 @@
 <pre><code data-noescape data-trim class="lang-csharp hljs">
 public void Foo(<span class="highlightcode">string s</span>)
 {
-    if (string.IsNullOrWhiteSpace(s))
+    <span class="highlightcode">if (string.IsNullOrWhiteSpace(s))</span>
     {
         //...
     }
@@ -17,7 +17,7 @@ public void Foo(<span class="highlightcode">string s</span>)
 <pre><code data-noescape data-trim class="lang-csharp hljs">
 public void Foo(<span class="highlightcode">List&lt;string&gt; someStringCollection</span>)
 {
-    if (someStringCollection != null && someStringCollection.Any())
+    <span class="highlightcode">if (someStringCollection != null && someStringCollection.Any())</span>
     {
         //...
     }
@@ -29,7 +29,7 @@ public void Foo(<span class="highlightcode">List&lt;string&gt; someStringCollect
 <pre><code data-noescape data-trim class="lang-csharp hljs">
 public void Foo(<span class="highlightcode">Customer customer</span>)
 {
-    if (customer?.Address?.ZipCode != null)
+    <span class="highlightcode">if (customer?.Address?.ZipCode != null)</span>
     {
         // ..
     }
