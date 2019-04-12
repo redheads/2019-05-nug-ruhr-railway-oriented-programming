@@ -26,7 +26,11 @@ FILE: errors-are-a-pain.md
 
 ---
 
-FILE: log-pro.md
+FILE: bad-models-are-a-pain.md
+
+---
+
+FILE: log-like-a-pro.md
 
 ---
 
