@@ -24,6 +24,9 @@ var result = Add(i1, i2);
 }
 </code></pre>
 
+- Offensichtliche Lüge!
+
+
 ----
 
 #### IMHO
@@ -33,4 +36,7 @@ var result = Add(i1, i2);
 
 ----
 
-**Anticipate Exceptions!**
+**Anticipate Errors!**
+
+- Fehler im Workflow sind normal (nicht die Aussnahme)
+- Fehler muessen auf Business-Ebene behandelt werden

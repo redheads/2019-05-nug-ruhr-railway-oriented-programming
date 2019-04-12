@@ -30,6 +30,10 @@ FILE: bad-models-are-a-pain.md
 
 ---
 
+FILE: everybody-lies.md
+
+---
+
 FILE: log-like-a-pro.md
 
 ---

@@ -1,5 +1,7 @@
 ## Bad models are a pain
 
+...hier sind wir (als Software Entwickler) gefragt...
+
 ----
 
 <pre><code data-noescape data-trim class="lang-csharp hljs">
@@ -24,15 +26,3 @@ class Customer
 class <span class="highlightcode">Name</span> { /*...*/ }
 class <span class="highlightcode">Email</span> { /*...*/ }
 </code></pre>
-
-----
-
-<!-- .slide: data-background="images/house-md-reuse.png" data-background-size="cover"  data-state="dimmed" -->
-
-<h2 style="position: absolute; top: 480px; right: -80px; color: white; text-transform: none;">Everybody lies</h2>
-
-<div style="position: absolute; top: 630px; left: -16%;">
-  <p class="img-src">https://www.deviantart.com/enfieldkay/art/House-M-D-TV-Series-FOLDER-Icons-384525887</p>
-</div>
-
----
