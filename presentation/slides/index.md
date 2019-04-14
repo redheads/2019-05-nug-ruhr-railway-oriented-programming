@@ -22,7 +22,15 @@ FILE: null-is-a-pain.md
 
 ---
 
+FILE: everybody-lies-1.md
+
+---
+
 FILE: errors-are-a-pain.md
+
+---
+
+FILE: everybody-lies-1.md
 
 ---
 
@@ -30,11 +38,11 @@ FILE: bad-models-are-a-pain.md
 
 ---
 
-FILE: everybody-lies.md
+FILE: log-like-a-pro.md
 
 ---
 
-FILE: log-like-a-pro.md
+FILE: sheldon-cooper.md
 
 ---
 
