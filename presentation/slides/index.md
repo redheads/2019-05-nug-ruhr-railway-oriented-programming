@@ -42,4 +42,16 @@ FILE: rop-single-track.md
 
 ---
 
+FILE: rop-single-track-with-switch.md
+
+---
+
+FILE: fp-arrow-notation.md
+
+---
+
+Test stuff...
+
+---
+
 FILE: code-demos.md
