@@ -2,9 +2,19 @@
 
 <h2 style="position: absolute; top: 70px; right: -150px; color: white; text-transform: none;">Railway Oriented Programming</h2>
 
-<p style="position: absolute; top: 520px; right: -145px; color: #ccc; text-transform: none; text-align: right" class="my-shadow">Patrick Drechsler<br/>@drechsler<br/>Redheads Ltd.</p>
+<div style="position: absolute; top: 520px; right: -150px; color: #ccc; text-transform: none; text-align: right" class="my-shadow">
+NUG Gelsenkirchen</br><i class="fa fa-calendar" aria-hidden="true"></i>&nbsp;2019-05-07
+</div>
 
-<div style="position: absolute; top: 630px; left: -16%;">
+<div style="position: absolute; top: 520px; left: -145px; color: #ccc; text-transform: none; text-align: right" class="my-shadow">
+<ul style="list-style: none;">
+<li>Patrick Drechsler</li>
+<li><i class="fa fa-twitter" aria-hidden="true"></i>&nbsp;@drechsler</li>
+<li>Redheads Ltd.</li>
+</ul>
+</div>
+
+<div style="position: absolute; top: 630px; right: -16%;">
   <p class="img-src">https://pixabay.com/users/Larisa-K-1107275/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=163518</p>
 </div>
 
@@ -26,12 +36,12 @@
   </ul>
 </div>
 
-<div style="position: absolute; top: 500px; left: 400px">
-  <img src="images/redheads-logo.png" class="borderless" style="height: 100px;">
+<div style="position: absolute; top: 350px; left: -8%">
+  <ul style="list-style: none; font-size: 70%;">
+    <li><i class="fa fa-twitter" aria-hidden="true"></i>&nbsp;@drechsler</li>
+    <li><i class="fa fa-github" aria-hidden="true"></i> github.com/draptik</li>
+    <li><i class="fa fa-globe" aria-hidden="true"></i> draptik.github.io</li>
+    <li><i class="fa fa-briefcase" aria-hidden="true"></i> redheads.de</li>
+    <li style="margin-top: 2rem;"><img src="images/redheads-logo.png" class="borderless" style="height: 80px;"></li>
+  </ul>
 </div>
-
----
-
-Demo 
-
-- <i class="fa fa-twitter" aria-hidden="true"></i>&nbsp;@drechsler
