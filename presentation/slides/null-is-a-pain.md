@@ -42,7 +42,7 @@ public void Foo(<span class="highlightcode">Customer customer</span>)
 
 ----
 
-<!-- .slide: data-background="images/null-vs-empty_3370lkxk56ny.jpg" -->
+<!-- .slide: data-background="resources/drawio/null.png" -->
 
 <div style="position: absolute; top: 630px; left: -16%;">
   <p class="img-src-plain">https://www.reddit.com/r/geek/comments/6128y3/amusing_example_between_0_and_null_0_on_the_left/</p>
