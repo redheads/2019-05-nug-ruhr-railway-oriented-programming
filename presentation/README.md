@@ -73,3 +73,7 @@ So... There are at least 3 files for configuration:
 Have fun.
 
 I haven't figured out the best way to configure talks yet. The current solution works.
+
+### Font Awesome
+
+I manually copied the font-awesome folder to `slides` because I couldn't figure out another way of accessing the font through `reveal.html`...
