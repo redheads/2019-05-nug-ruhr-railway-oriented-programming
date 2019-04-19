@@ -38,5 +38,5 @@ var result = Add(i1, i2);
 
 **Anticipate Errors!**
 
-- Fehler im Workflow sind normal (nicht die Aussnahme)
-- Fehler muessen auf Business-Ebene behandelt werden
+- Fehler im Workflow sind normal (nicht die Ausnahme)
+- Fehler müssen auf Business-Ebene behandelt werden

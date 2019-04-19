@@ -14,7 +14,7 @@ class Customer
 }
 </code></pre>
 
-vs
+<div style="color: #ccc; text-transform: none;" class="my-shadow">vs</div>
 
 <pre><code data-noescape data-trim class="lang-csharp hljs">
 class Customer
