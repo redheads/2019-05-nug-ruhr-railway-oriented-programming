@@ -8,3 +8,5 @@
 - [house-md-everybody-lies.jpg](https://www.google.de/url?sa=i&source=images&cd=&cad=rja&uact=8&ved=2ahUKEwi0ion8nMnhAhXNjqQKHRzMBz0QjRx6BAgBEAU&url=https%3A%2F%2Fwww.tallengestore.com%2Fproducts%2Feverybody-lies-house-md-art-by-anna-kay-canvas-prints&psig=AOvVaw04MriPHhS8MV8mRzz9K5jr&ust=1555112620533921) no license!!
 - [house-md-everybody-lies2.jpg](https://www.google.de/url?sa=i&source=images&cd=&cad=rja&uact=8&ved=2ahUKEwir46uan8nhAhUFsaQKHTDuDHIQjRx6BAgBEAU&url=http%3A%2F%2Fwww.4usky.com%2Fdownload%2F164388608.html&psig=AOvVaw0UTuHiwxmHh1D7BtKPqcVV&ust=1555113439258917) no license!!
 - [house-md-reuse.png](https://www.google.de/url?sa=i&source=images&cd=&cad=rja&uact=8&ved=2ahUKEwjs84DlocnhAhXE-qQKHc2FDFsQjRx6BAgBEAU&url=https%3A%2F%2Fwww.deviantart.com%2Fenfieldkay%2Fart%2FHouse-M-D-TV-Series-FOLDER-Icons-384525887&psig=AOvVaw3AyNDc7VWEnaSoYhl-P1Qa&ust=1555114107677159) labeled for non-commercial reuse by google
+- [Sir_Tony_Hoare_IMG_5125-wikipedia](https://upload.wikimedia.org/wikipedia/commons/2/2c/Sir_Tony_Hoare_IMG_5125.jpg)
+- [tony-hoare-wikipedia.png](https://en.wikipedia.org/wiki/Tony_Hoare) Screenshot 2019-04-19

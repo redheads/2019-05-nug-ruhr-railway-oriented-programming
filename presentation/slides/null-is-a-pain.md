@@ -61,6 +61,16 @@ public void Foo(<span class="highlightcode">Customer customer</span>)
 
 ----
 
+<!-- .slide: data-background="images/Sir_Tony_Hoare_IMG_5125-wikipedia.jpg" -->
+
+----
+
+![img](images/tony-hoare-wikipedia.png)
+
+----
+
+<!-- .slide: data-background="images/Sir_Tony_Hoare_IMG_5125-wikipedia.jpg" data-state="dimmed" -->
+
 ### Billion Dollar Mistake
 
 > Tony Hoare introduced Null references in ALGOL W back in 1965 "simply because it was so easy to implement", says Mr. Hoare. He talks about that decision considering it "my billion-dollar mistake".
