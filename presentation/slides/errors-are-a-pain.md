@@ -7,7 +7,7 @@
 <pre><code data-noescape data-trim class="lang-csharp hljs">
 <span class="highlightcode">int</span> Add(int a, int b) => a + b;
 
-var i1 = Int32.Max;
+var i1 = int.MaxValue;
 var i2 = 1;
 
 var result = Add(i1, i2);
