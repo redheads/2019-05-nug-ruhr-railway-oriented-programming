@@ -1,12 +1,13 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
 using FluentAssertions;
+using RopDemos.Slides.MyResult;
 using Xunit;
 // ReSharper disable ClassNeverInstantiated.Global
 
 namespace RopDemos.Slides
 {
-    public class SlideTests
+    public partial class SlideTests
     {
         public class NullIsAPain
         {
@@ -72,6 +73,67 @@ namespace RopDemos.Slides
 
                 var result = Add(i1, i2);
                 result.Should().Be(int.MaxValue);
+            }
+        }
+
+        public class RopSingleTrack
+        {
+            [Fact]
+            public void F1Demo0()
+            {
+                string f1(string input) => input.ToUpper();
+                var result = f1("abc");
+                result.Should().Be("ABC");
+            }
+
+            [Fact]
+            public void F2_with_inner_F1()
+            {
+                string f1(string input) => input.ToUpper();
+                int    f2(string input) => input.Length;
+
+                var r1 = f1("abc");
+                var r2 = f2(r1);
+
+                r2.Should().Be(3);
+            }
+
+            [Fact]
+            public void F12_combines_F1_and_F2()
+            {
+                string f1 (string input) => input.ToUpper();
+                int    f2 (string input) => input.Length;
+
+                int    f12(string input) => f2(f1(input)); // "Composition"
+
+                var result = f12("abc");
+
+                result.Should().Be(3);
+            }
+        }
+
+        public partial class RopSingleTrackWithSwitch
+        {
+            [Fact]
+            public void Playing_with_MyResult_creating_success()
+            {
+                // creating result
+                var result = "x".Success<string, string>();
+                
+                // some sane assertions
+                result.IsSuccess.Should().BeTrue();
+                result.SuccessValue.Should().Be("x");
+            }
+
+            [Fact]
+            public void Playing_with_MyResult_creating_failure()
+            {
+                // creating result
+                var result = "ups".Failure<string, string>();
+                
+                // some sane assertions
+                result.IsSuccess.Should().BeFalse();
+                result.FailureValue.Should().Be("ups");
             }
         }
     }
