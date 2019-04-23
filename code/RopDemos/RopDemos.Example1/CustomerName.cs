@@ -6,14 +6,14 @@ namespace RopDemos.Example1
     {
         public string Value { get; }
 
-        public CustomerName(string value)
+        private CustomerName(string value)
         {
             Value = value;
         }
 
         public static Result<CustomerName> Create(string name)
-        {
-            return Result.Ok(new CustomerName(name));
-        }
+            => string.IsNullOrWhiteSpace(name)
+                ? Result.Fail<CustomerName>("invalid name")
+                : Result.Ok(new CustomerName(name));
     }
 }

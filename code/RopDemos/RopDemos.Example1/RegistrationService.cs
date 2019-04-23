@@ -22,7 +22,33 @@
 
             var greetingResult = _mailService.SendGreeting(customerResult.Value);
 
-            return new RegistrationResponse(greetingResult.Value);
+            return RegistrationResponse.Success(greetingResult.Value);
+        }
+
+        public RegistrationResponse RegisterNewCustomer_Error_Handling1(string name)
+        {
+            var customerNameResult = CustomerName.Create(name);
+            if (customerNameResult.IsFailure)
+            {
+                return RegistrationResponse.Fail("invalid customer name");
+            }
+
+            var customer = new Customer(customerNameResult.Value);
+
+            var customerResult = _customerRepository.Save(customer);
+            if (customerResult.IsFailure)
+            {
+                return RegistrationResponse.Fail("failure saving customer");
+            }
+
+
+            var greetingResult = _mailService.SendGreeting(customerResult.Value);
+            if (greetingResult.IsFailure)
+            {
+                return RegistrationResponse.Fail("failure sending greeting mail");
+            }
+
+            return RegistrationResponse.Success(greetingResult.Value);
         }
     }
 }
