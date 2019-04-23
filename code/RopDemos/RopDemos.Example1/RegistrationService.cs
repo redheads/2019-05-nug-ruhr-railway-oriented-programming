@@ -1,4 +1,6 @@
-﻿namespace RopDemos.Example1
+﻿using CSharpFunctionalExtensions;
+
+namespace RopDemos.Example1
 {
     public class RegistrationService
     {
@@ -30,7 +32,7 @@
             var customerNameResult = CustomerName.Create(name);
             if (customerNameResult.IsFailure)
             {
-                return RegistrationResponse.Fail("invalid customer name");
+                return RegistrationResponse.Fail(customerNameResult.Error);
             }
 
             var customer = new Customer(customerNameResult.Value);
@@ -38,17 +40,32 @@
             var customerResult = _customerRepository.Save(customer);
             if (customerResult.IsFailure)
             {
-                return RegistrationResponse.Fail("failure saving customer");
+                return RegistrationResponse.Fail(customerResult.Error);
             }
 
 
             var greetingResult = _mailService.SendGreeting(customerResult.Value);
             if (greetingResult.IsFailure)
             {
-                return RegistrationResponse.Fail("failure sending greeting mail");
+                return RegistrationResponse.Fail(greetingResult.Error);
             }
 
             return RegistrationResponse.Success(greetingResult.Value);
+        }
+
+        public RegistrationResponse RegisterNewCustomer_Error_Handling2(string name)
+        {
+            var customerNameResult = CustomerName.Create(name);
+
+            var result = customerNameResult
+                .OnSuccess(x => Result.Ok(new Customer(x)))
+                .OnSuccess(x => _customerRepository.Save(x))
+                .OnSuccess(x => _mailService.SendGreeting(x))
+                .OnBoth(x => x.IsSuccess
+                    ? RegistrationResponse.Success(x.Value)
+                    : RegistrationResponse.Fail(x.Error));
+
+            return result;
         }
     }
 }
