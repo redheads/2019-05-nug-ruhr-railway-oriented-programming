@@ -73,6 +73,20 @@
   background-color: yellow;
 }
 
+.reveal pre code .bold-code {
+  font-weight: bold;
+}
+
+.reveal pre code .code-with-border {
+  border-width: 2px;
+  padding: 0px 10px 0px 10px;
+  border-radius: 5px;
+  border-style: solid;
+  border-color: darkgoldenrod;
+}
+
+
+
 .dimmed .slide-background {
   opacity: 0.50 !important;
 }
