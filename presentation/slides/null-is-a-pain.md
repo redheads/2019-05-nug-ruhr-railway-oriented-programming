@@ -69,6 +69,10 @@ public void Foo(<span class="highlightcode">Customer customer</span>)
 
 ----
 
+![img](images/tony-hoare-wikipedia-highlight.png)
+
+----
+
 <!-- .slide: data-background="images/Sir_Tony_Hoare_IMG_5125-wikipedia.jpg" data-state="dimmed" -->
 
 ### Billion Dollar Mistake
