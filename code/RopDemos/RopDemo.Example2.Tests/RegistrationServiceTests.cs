@@ -33,6 +33,54 @@ namespace RopDemo.Example2.Tests
                 .BeEquivalentTo(RegistrationResponse.Success(_customer));
         }
 
+        [Fact]
+        public void Registering_invalid_customer_should_have_correct_error()
+        {
+            // Arrange
+            var sut = new RegistrationService(_customerRepository, _mailService);
+
+            // Act
+            var result = sut.RegisterNewCustomer_Error_Handling2("");
+
+            // Assert
+            result.Should()
+                .BeEquivalentTo(RegistrationResponse.Fail("invalid name"));
+        }
+
+        [Fact]
+        public void Registering_with_repository_error_should_have_correct_error()
+        {
+            // Arrange
+            var sut = new RegistrationService(_customerRepository, _mailService);
+            _customerRepository
+                .Save(Arg.Any<Customer>())
+                .Returns(Left("repo error"));
+
+            // Act
+            var result = sut.RegisterNewCustomer_Error_Handling2("valid");
+
+            // Assert
+            result.Should()
+                .BeEquivalentTo(RegistrationResponse.Fail("repo error"));
+        }
+
+        [Fact]
+        public void Registering_with_mailer_error_should_have_correct_error()
+        {
+            // Arrange
+            var sut = new RegistrationService(_customerRepository, _mailService);
+            _mailService
+                .SendGreeting(Arg.Any<Customer>())
+                .Returns(Left("mailer error"));
+
+            // Act
+            var result = sut.RegisterNewCustomer_Error_Handling2("valid");
+
+            // Assert
+            result.Should()
+                .BeEquivalentTo(RegistrationResponse.Fail("mailer error"));
+        }
+
         private static ICustomerRepository SetupCustomerRepository(Customer customer)
         {
             var customerRepository = Substitute.For<ICustomerRepository>();
