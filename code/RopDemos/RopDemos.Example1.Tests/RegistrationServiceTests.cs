@@ -11,7 +11,7 @@ namespace RopDemos.Example1.Tests
         public void Registering_valid_customer_happy_path_works()
         {
             // Arrange
-            var customer = new Customer(CustomerName.Create("test").Value);
+            var customer = new Customer(CustomerName.TryCreate("test").Value);
 
             var customerRepository = Substitute.For<ICustomerRepository>();
 
@@ -39,7 +39,7 @@ namespace RopDemos.Example1.Tests
         public void Registering_invalid_customer_should_have_correct_error()
         {
             // Arrange
-            var customer = new Customer(CustomerName.Create("test").Value);
+            var customer = new Customer(CustomerName.TryCreate("test").Value);
 
             var customerRepository = Substitute.For<ICustomerRepository>();
 
@@ -67,7 +67,7 @@ namespace RopDemos.Example1.Tests
         public void Registering_invalid_customer_rop_should_have_correct_error()
         {
             // Arrange
-            var customer = new Customer(CustomerName.Create("test").Value);
+            var customer = new Customer(CustomerName.TryCreate("test").Value);
 
             var customerRepository = Substitute.For<ICustomerRepository>();
 

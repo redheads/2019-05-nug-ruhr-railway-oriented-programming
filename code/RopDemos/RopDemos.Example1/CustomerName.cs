@@ -11,7 +11,7 @@ namespace RopDemos.Example1
             Value = value;
         }
 
-        public static Result<CustomerName> Create(string name)
+        public static Result<CustomerName> TryCreate(string name)
             => string.IsNullOrWhiteSpace(name)
                 ? Result.Fail<CustomerName>("invalid name")
                 : Result.Ok(new CustomerName(name));

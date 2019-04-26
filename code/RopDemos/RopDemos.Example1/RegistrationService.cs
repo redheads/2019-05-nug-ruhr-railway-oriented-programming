@@ -17,7 +17,7 @@ namespace RopDemos.Example1
 
         public RegistrationResponse RegisterNewCustomer_NoError_Handling(string name)
         {
-            var customerNameResult = CustomerName.Create(name);
+            var customerNameResult = CustomerName.TryCreate(name);
             var customer = new Customer(customerNameResult.Value);
 
             var customerResult = _customerRepository.Save(customer);
@@ -29,7 +29,7 @@ namespace RopDemos.Example1
 
         public RegistrationResponse RegisterNewCustomer_Error_Handling1(string name)
         {
-            var customerNameResult = CustomerName.Create(name);
+            var customerNameResult = CustomerName.TryCreate(name);
             if (customerNameResult.IsFailure)
             {
                 return RegistrationResponse.Fail(customerNameResult.Error);
@@ -55,7 +55,7 @@ namespace RopDemos.Example1
 
         public RegistrationResponse RegisterNewCustomer_Error_Handling2(string name)
         {
-            var customerNameResult = CustomerName.Create(name);
+            var customerNameResult = CustomerName.TryCreate(name);
 
             var result = customerNameResult
                 .OnSuccess(x => Result.Ok(new Customer(x)))
