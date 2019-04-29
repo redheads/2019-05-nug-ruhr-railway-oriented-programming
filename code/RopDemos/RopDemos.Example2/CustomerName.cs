@@ -1,4 +1,5 @@
 ﻿using LanguageExt;
+using static LanguageExt.Prelude;
 
 namespace RopDemos.Example2
 {
@@ -13,7 +14,7 @@ namespace RopDemos.Example2
 
         public static Either<string, CustomerName> TryCreate(string name) =>
             string.IsNullOrWhiteSpace(name)
-                ? (Either<string, CustomerName>) Prelude.Left("invalid name")
-                : Prelude.Right(new CustomerName(name));
+                ? (Either<string, CustomerName>) Left("invalid name")
+                : Right(new CustomerName(name));
     }
 }

@@ -1,4 +1,5 @@
 ﻿using LanguageExt;
+using static LanguageExt.Prelude;
 
 namespace RopDemos.Example2
 {
@@ -13,7 +14,7 @@ namespace RopDemos.Example2
 
         public static Either<string, Customer> TryCreate(CustomerName customerName)
         {
-            return Prelude.Right(new Customer(customerName));
+            return Right(new Customer(customerName));
         }
     }
 }
