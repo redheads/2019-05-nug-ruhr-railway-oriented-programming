@@ -3,5 +3,5 @@
 *.sln     -text 
 *.cmd     -text 
 *.msbuild -text 
-*.md      -text
+*.md      -text eol-crlf
 
