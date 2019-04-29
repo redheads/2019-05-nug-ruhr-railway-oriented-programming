@@ -1,6 +1,6 @@
 ﻿using LanguageExt;
 
-namespace RopDemo.Example2
+namespace RopDemos.Example2
 {
     public interface IMailService
     {

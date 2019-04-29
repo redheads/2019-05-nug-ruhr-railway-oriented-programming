@@ -1,4 +1,4 @@
-﻿namespace RopDemo.Example2
+﻿namespace RopDemos.Example2
 {
     public class RegistrationResponse
     {

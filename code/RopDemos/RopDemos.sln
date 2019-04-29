@@ -9,9 +9,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RopDemos.Example1", "RopDem
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RopDemos.Example1.Tests", "RopDemos.Example1.Tests\RopDemos.Example1.Tests.csproj", "{0D8E4F62-B7BE-4FFD-BEEF-C3141BFFB4E9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RopDemo.Example2", "RopDemo.Example2\RopDemo.Example2.csproj", "{9F4D48C6-56B3-4E54-9431-A1BC7480D4A8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RopDemos.Example2", "RopDemos.Example2\RopDemos.Example2.csproj", "{9F4D48C6-56B3-4E54-9431-A1BC7480D4A8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RopDemo.Example2.Tests", "RopDemo.Example2.Tests\RopDemo.Example2.Tests.csproj", "{BD71F0B9-D362-4E5A-9D7C-94AA850D44F8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RopDemos.Example2.Tests", "RopDemos.Example2.Tests\RopDemos.Example2.Tests.csproj", "{BD71F0B9-D362-4E5A-9D7C-94AA850D44F8}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Example1", "Example1", "{EB7CFDDE-5BB9-4B2A-9E29-C8EB3FEA3D69}"
 EndProject

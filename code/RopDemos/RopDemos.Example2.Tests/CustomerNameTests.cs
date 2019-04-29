@@ -1,7 +1,7 @@
 ﻿using FluentAssertions;
 using Xunit;
 
-namespace RopDemo.Example2.Tests
+namespace RopDemos.Example2.Tests
 {
     public class CustomerNameTests
     {

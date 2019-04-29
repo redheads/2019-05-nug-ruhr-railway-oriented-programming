@@ -1,10 +1,10 @@
 ﻿using System;
 using FluentAssertions;
-using static LanguageExt.Prelude;
+using LanguageExt;
 using NSubstitute;
 using Xunit;
 
-namespace RopDemo.Example2.Tests
+namespace RopDemos.Example2.Tests
 {
     public class RegistrationServiceTests
     {
@@ -54,7 +54,7 @@ namespace RopDemo.Example2.Tests
             var sut = new RegistrationService(_customerRepository, _mailService);
             _customerRepository
                 .Save(Arg.Any<Customer>())
-                .Returns(Left("repo error"));
+                .Returns(Prelude.Left("repo error"));
 
             // Act
             var result = sut.RegisterNewCustomer_Error_Handling2("valid");
@@ -71,7 +71,7 @@ namespace RopDemo.Example2.Tests
             var sut = new RegistrationService(_customerRepository, _mailService);
             _mailService
                 .SendGreeting(Arg.Any<Customer>())
-                .Returns(Left("mailer error"));
+                .Returns(Prelude.Left("mailer error"));
 
             // Act
             var result = sut.RegisterNewCustomer_Error_Handling2("valid");
@@ -86,7 +86,7 @@ namespace RopDemo.Example2.Tests
             var customerRepository = Substitute.For<ICustomerRepository>();
             customerRepository
                 .Save(Arg.Any<Customer>())
-                .Returns(Right(customer));
+                .Returns(Prelude.Right(customer));
             return customerRepository;
         }
 
@@ -95,7 +95,7 @@ namespace RopDemo.Example2.Tests
             var mailService = Substitute.For<IMailService>();
             mailService
                 .SendGreeting(Arg.Any<Customer>())
-                .Returns(Right(customer));
+                .Returns(Prelude.Right(customer));
             return mailService;
         }
 
