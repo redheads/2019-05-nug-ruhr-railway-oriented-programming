@@ -38,6 +38,18 @@ FILE: bad-models-are-a-pain.md
 
 ---
 
+FILE: everybody-lies-1.md
+
+---
+
+FILE: bad-user-stories-are-a-pain.md
+
+---
+
+FILE: everybody-lies-1.md
+
+---
+
 FILE: log-like-a-pro.md
 
 ---
@@ -63,3 +75,15 @@ FILE: rop-combining-results.md
 ---
 
 FILE: rop-returning-results.md
+
+---
+
+FILE: rop-libs.md
+
+---
+
+FILE: wlaschin-monad-video.md
+
+---
+
+FILE: end.md
