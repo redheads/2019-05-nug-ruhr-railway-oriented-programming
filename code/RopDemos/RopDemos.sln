@@ -17,6 +17,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Example1", "Example1", "{EB
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Example2", "Example2", "{C39CE69B-E24E-48BD-99B4-F42471218427}"
 EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "RopDemos.Fsharp.Tests", "RopDemos.Fsharp.Tests\RopDemos.Fsharp.Tests.fsproj", "{0C9FF7F9-4A13-490B-B593-8DAC1447AD94}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -43,6 +45,10 @@ Global
 		{BD71F0B9-D362-4E5A-9D7C-94AA850D44F8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BD71F0B9-D362-4E5A-9D7C-94AA850D44F8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BD71F0B9-D362-4E5A-9D7C-94AA850D44F8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0C9FF7F9-4A13-490B-B593-8DAC1447AD94}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0C9FF7F9-4A13-490B-B593-8DAC1447AD94}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0C9FF7F9-4A13-490B-B593-8DAC1447AD94}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0C9FF7F9-4A13-490B-B593-8DAC1447AD94}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
