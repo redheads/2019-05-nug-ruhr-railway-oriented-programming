@@ -62,8 +62,4 @@ FILE: rop-combining-results.md
 
 ---
 
-Test stuff...
-
----
-
-FILE: code-demos.md
+FILE: rop-returning-results.md

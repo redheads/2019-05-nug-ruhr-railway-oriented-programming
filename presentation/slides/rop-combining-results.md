@@ -1,5 +1,39 @@
-## Combining Results
+## Ergebnisse kombinieren
 
+---
+
+## Ergebnisse kombinieren
+
+![img](resources/drawio/rop-Page-3-2-track-with-functions.png)
+
+---
+
+### Problem
+
+Wir haben Funktionen mit
+- Input: Single-Track
+- Output: Two-Track
+
+![img](resources/drawio/rop-Page-3b.png)
+
+---
+
+### Wir brauchen einen "Adapter"
+
+![img](resources/drawio/rop-Page-3-adapter1.png)
+
+---
+
+"Adapter" muss in die `Result` Klasse eingebaut sein
+
+- kein Hexenwerk
+- es gibt fertige NuGet Pakete
+- "zu Fuß"
+
+---
+
+"zu Fuß"
+  
 <pre><code data-noescape data-trim class="lang-csharp hljs">
 static class ResultExtensions
 {
@@ -14,3 +48,4 @@ static class ResultExtensions
     }</span>
 })
 </code></pre>
+

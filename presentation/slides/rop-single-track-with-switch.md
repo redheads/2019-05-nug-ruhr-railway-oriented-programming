@@ -62,6 +62,20 @@ Wie kann man Funktionen verketten?
 
 ---
 
+## Ziel: Two-track model
+
+![img](resources/drawio/rop-Page-3-2-track.png)
+
+---
+
+## Two-track model
+
+### mit Anfang und Ende
+
+![img](resources/drawio/rop-Page-3-2-track-with-start-end.png)
+
+---
+
 `Result` muss **Single-Input Funktion** entgegennehmen
 
 ---
@@ -69,14 +83,27 @@ Wie kann man Funktionen verketten?
 Single-Input Funktion mit `Result` Rückgabewert hat folgende Signatur:
 
 ```csharp
+// Methode
 Result<int, Error> f2(string input) { /*..*/ }
 
-// Function signature
+// Allgemein
+Result<TSuccess, TError> f2(TInput input) { /*..*/ }
+```
+
+```csharp
+// Funktion
 Func<string, Result<int, Error>> func2
 
 // Allgemein
-Func<TSuccess1, Result<TSuccess2, TError>> func2
+Func<TInput, Result<TSuccess, TError>> func2
 ```
 
-Das Lesen so einer Signatur benötigt anfangs etwas Übung
+Eine Funktionssignatur verhält sich zu einer Funktion wie ein Interface zu einer Klasse
 
+---
+
+```csharp
+Func<TInput, Result<TSuccess, TError>> func2
+```
+
+Das Lesen so einer Signatur benötigt anfangs etwas Übung...
