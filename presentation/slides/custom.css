@@ -120,3 +120,7 @@
 .reveal blockquote p {
   margin-left: 5%;
 }
+
+.reveal .slides .too-much-content {
+  font-size: 70%;
+}
