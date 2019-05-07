@@ -49,3 +49,10 @@ static class ResultExtensions
 })
 </code></pre>
 
+---
+
+![img](resources/drawio/rop-Page-3-adapter2.png)
+
+---
+
+![img](resources/drawio/rop-Page-3-adapter3.png)
