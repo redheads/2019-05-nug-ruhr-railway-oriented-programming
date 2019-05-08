@@ -86,4 +86,8 @@ FILE: wlaschin-monad-video.md
 
 ---
 
+FILE: fsharp-rop.md
+
+---
+
 FILE: end.md
