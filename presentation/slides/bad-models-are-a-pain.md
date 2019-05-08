@@ -3,7 +3,6 @@
 ...hier sind wir (als Software Entwickler) gefragt...
 
 ----
-<!-- .slide: data-background="images/house-md-everybody-lies2.jpg" data-background-size="cover" data-state="dimmed" -->
 
 <pre><code data-noescape data-trim class="lang-csharp hljs">
 class Customer
