@@ -59,6 +59,25 @@ let bind switchFunction twoTrackInput =
 
 ----
 
+zur Erinnerung: C# Bind
+
+```csharp
+static class ResultExtensions
+{
+    static Result<TSuccess2, TError> OnSuccess
+        (this Result<TSuccess, TError> result,
+        Func<TSuccess, Result<TSuccess2, TError>> func)
+    {
+        if (result.IsSuccess)
+            return func(result.Success)
+
+        return result.Failure;
+    }
+})
+```
+
+----
+
 ### F# Railway Oriented Programming 
 #### Version 1
 
@@ -114,3 +133,4 @@ result2 |> printfn "Result=%A"
 
 // Result=Error "Name must not be blank"
 ```
+
