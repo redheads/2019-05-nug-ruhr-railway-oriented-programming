@@ -1,4 +1,6 @@
-﻿using CSharpFunctionalExtensions;
+﻿using System.Collections.Generic;
+using System.Linq;
+using CSharpFunctionalExtensions;
 using FluentAssertions;
 using NSubstitute;
 using Xunit;
@@ -90,5 +92,20 @@ namespace RopDemos.Example1.Tests
             result.Should()
                 .BeEquivalentTo(RegistrationResponse.Fail("invalid name"));
         }
+
+        [Fact]
+        public void Null_collections_are_still_a_problem()
+        {
+            var result = Result.Ok<List<string>>(null);
+            var finalResult = result
+                .OnSuccess(x => x.Take(50))
+                .OnBoth(x => x.IsSuccess
+                    ? "ok"
+                    : "ups");
+
+            finalResult.Should().Be("ok");
+        }
+
+
     }
 }
