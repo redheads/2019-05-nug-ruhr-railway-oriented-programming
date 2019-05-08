@@ -68,6 +68,41 @@ let ``railway demo 1`` () =
 [<Fact>]
 let ``railway demo 2`` () =
 
+    let combinedValidation = 
+        validate1 
+        >> bind validate2 
+        >> bind validate3
+
+    // test 1
+    let input1 = {name=""; email=""}
+    let result = combinedValidation input1 
+    match result with
+    | Ok req -> Assert.Equal(req, {name=""; email=""})
+    | Error error -> Assert.Equal(error, "Name must not be blank")
+    
+    result |> printfn "Result=%A"
+    
+    // test 2
+    let input2 = {name="Alice"; email=""}
+    let result2 = combinedValidation input2
+    match result2 with
+    | Ok req -> Assert.Equal(req, {name=""; email=""})
+    | Error error -> Assert.Equal(error, "Email must not be blank")
+
+    result2 |> printfn "Result=%A"
+
+    // test 3
+    let input3 = {name="Alice"; email="good"}
+    let result3 = combinedValidation input3
+    match result3 with
+    | Ok req -> Assert.Equal(req, {name="Alice"; email="good"})
+    | Error error -> Assert.Equal(error, "")
+
+    result3 |> printfn "Result=%A"
+
+[<Fact>]
+let ``railway demo 3`` () =
+
     let (>>=) twoTrackInput switchFunction = 
         bind switchFunction twoTrackInput 
 
@@ -105,37 +140,3 @@ let ``railway demo 2`` () =
 
     result3 |> printfn "Result=%A"
 
-[<Fact>]
-let ``railway demo 3`` () =
-
-    let combinedValidation = 
-        validate1 
-        >> bind validate2 
-        >> bind validate3
-
-    // test 1
-    let input1 = {name=""; email=""}
-    let result = combinedValidation input1 
-    match result with
-    | Ok req -> Assert.Equal(req, {name=""; email=""})
-    | Error error -> Assert.Equal(error, "Name must not be blank")
-    
-    result |> printfn "Result=%A"
-    
-    // test 2
-    let input2 = {name="Alice"; email=""}
-    let result2 = combinedValidation input2
-    match result2 with
-    | Ok req -> Assert.Equal(req, {name=""; email=""})
-    | Error error -> Assert.Equal(error, "Email must not be blank")
-
-    result2 |> printfn "Result=%A"
-
-    // test 3
-    let input3 = {name="Alice"; email="good"}
-    let result3 = combinedValidation input3
-    match result3 with
-    | Ok req -> Assert.Equal(req, {name="Alice"; email="good"})
-    | Error error -> Assert.Equal(error, "")
-
-    result3 |> printfn "Result=%A"
