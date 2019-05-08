@@ -45,6 +45,8 @@ let ``railway demo 1`` () =
     | Ok req -> Assert.Equal(req, {name=""; email=""})
     | Error error -> Assert.Equal(error, "Name must not be blank")
 
+    result |> printfn "Result=%A"
+
     // test 2
     let input2 = {name="Alice"; email=""}
     let result2 = combinedValidation input2
@@ -52,7 +54,7 @@ let ``railway demo 1`` () =
     | Ok req -> Assert.Equal(req, {name=""; email=""})
     | Error error -> Assert.Equal(error, "Email must not be blank")
 
-    result2 |> printfn "Result3=%A"
+    result2 |> printfn "Result=%A"
 
     // test 3
     let input3 = {name="Alice"; email="good"}
@@ -61,7 +63,7 @@ let ``railway demo 1`` () =
     | Ok req -> Assert.Equal(req, {name="Alice"; email="good"})
     | Error error -> Assert.Equal(error, "")
 
-    result3 |> printfn "Result3=%A"
+    result3 |> printfn "Result=%A"
 
 [<Fact>]
 let ``railway demo 2`` () =
@@ -83,6 +85,8 @@ let ``railway demo 2`` () =
     | Ok req -> Assert.Equal(req, {name=""; email=""})
     | Error error -> Assert.Equal(error, "Name must not be blank")
 
+    result |> printfn "Result=%A"
+
     // test 2
     let input2 = {name="Alice"; email=""}
     let result2 = combinedValidation input2
@@ -90,7 +94,7 @@ let ``railway demo 2`` () =
     | Ok req -> Assert.Equal(req, {name=""; email=""})
     | Error error -> Assert.Equal(error, "Email must not be blank")
 
-    result2 |> printfn "Result3=%A"
+    result2 |> printfn "Result=%A"
 
     // test 3
     let input3 = {name="Alice"; email="good"}
@@ -99,7 +103,7 @@ let ``railway demo 2`` () =
     | Ok req -> Assert.Equal(req, {name="Alice"; email="good"})
     | Error error -> Assert.Equal(error, "")
 
-    result3 |> printfn "Result3=%A"
+    result3 |> printfn "Result=%A"
 
 [<Fact>]
 let ``railway demo 3`` () =
@@ -115,7 +119,9 @@ let ``railway demo 3`` () =
     match result with
     | Ok req -> Assert.Equal(req, {name=""; email=""})
     | Error error -> Assert.Equal(error, "Name must not be blank")
-
+    
+    result |> printfn "Result=%A"
+    
     // test 2
     let input2 = {name="Alice"; email=""}
     let result2 = combinedValidation input2
@@ -123,7 +129,7 @@ let ``railway demo 3`` () =
     | Ok req -> Assert.Equal(req, {name=""; email=""})
     | Error error -> Assert.Equal(error, "Email must not be blank")
 
-    result2 |> printfn "Result3=%A"
+    result2 |> printfn "Result=%A"
 
     // test 3
     let input3 = {name="Alice"; email="good"}
@@ -132,4 +138,4 @@ let ``railway demo 3`` () =
     | Ok req -> Assert.Equal(req, {name="Alice"; email="good"})
     | Error error -> Assert.Equal(error, "")
 
-    result3 |> printfn "Result3=%A"
+    result3 |> printfn "Result=%A"
